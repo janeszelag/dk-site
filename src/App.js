@@ -1,25 +1,80 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  Link,
+} from "react-router-dom"
+import styled from "styled-components"
+import NavBar from "./components/NavBar"
+
+const Work = () => {
+  return (
+    <div>
+      <p>work here</p>
+    </div>
+  )
+}
+
+const Reel = () => {
+  return (
+    <div>
+      <p>this is where the reel will go</p>
+    </div>
+  )
+}
+const Contact = () => {
+  return (
+    <div>
+      <p>this is where contact and bio will go</p>
+    </div>
+  )
+}
+
+const MainDiv = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+height: 100%;
+width: 100%;
+`
+const InnerDiv = styled.div`
+display: flex;
+flex-direction: column;
+padding-top: 3rem;
+height: 100%;
+width: 80%;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <MainDiv >
+      <InnerDiv>
+          <NavBar />
+          <Switch>
+        <Route path='/reel'>
+          <Reel />
+        </Route>
+        <Route path='/work'>
+          <Work />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/'>
+          <Redirect to='/reel' />
+        </Route>
+      </Switch>
+      </InnerDiv>
+      </MainDiv>
+
+
+    
+    </Router>
+  )
 }
 
-export default App;
+export default App

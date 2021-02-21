@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'TheMoonlight';
+  src: local('TheMoonlight'), url(./Fonts/TheMoonlight.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'FranklinGothic';
+  src: local('FranklinGothic'), url(./Fonts/FranklinGothic-MediumCond.ttf) format('truetype');
+}
