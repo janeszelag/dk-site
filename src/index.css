@@ -14,11 +14,11 @@ code {
 
 @font-face {
   font-family: 'TheMoonlight';
-  src: local('TheMoonlight'), url(./Fonts/TheMoonlight.otf) format('opentype');
+  src: local('TheMoonlight'), url(./fonts/TheMoonlight.otf) format('opentype');
 }
 
 
 @font-face {
   font-family: 'FranklinGothic';
-  src: local('FranklinGothic'), url(./Fonts/FranklinGothic-MediumCond.ttf) format('truetype');
+  src: local('FranklinGothic'), url(./fonts/FranklinGothic-MediumCond.ttf) format('truetype');
 }

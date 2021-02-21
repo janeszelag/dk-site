@@ -14,7 +14,7 @@ export const OuterDiv = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
   }
