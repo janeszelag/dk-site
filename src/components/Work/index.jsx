@@ -58,11 +58,6 @@ const Work = () => {
         url2={urls[3]}
         isMobile={isMobile}
       />
-        <Row
-        url1={urls[10]}
-        url2={urls[5]}
-        isMobile={isMobile}
-      />
       <Row
         url1={urls[6]}
         url2={urls[2]}
