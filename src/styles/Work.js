@@ -16,6 +16,9 @@ justify-content: space-between;
 @media (max-width: 900px) {
   justify-content: center;
 }
+@media (min-width: 1200px) {
+  justify-content: space-evenly;
+}
 `
 
 export const VideoDiv = styled.div`

@@ -24,7 +24,10 @@ const Contact = () => {
         <br />
         <br />
         My surreal and off-beat film projects have been featured in many reputable film festivals including the Boston Underground Film Festival,
-        the Calgary Underground Film Festival and the LA Film Forum. I am graduate of the Sheridan Media Arts/ Film & Television program.
+        the Calgary Underground Film Festival and the LA Film Forum.
+        <br />
+        <br />
+        I am graduate of the Sheridan Media Arts/Film & Television program.
         </Paragraph>
         <InfoDiv>
           <Info>dkneault@gmail.com</Info>
