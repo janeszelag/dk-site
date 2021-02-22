@@ -20,5 +20,5 @@ code {
 
 @font-face {
   font-family: 'FranklinGothic';
-  src: local('FranklinGothic'), url(./fonts/FranklinGothic-MediumCond.ttf) format('truetype');
+  src: local('FranklinGothic'), url(./fonts/FranklinGothic.ttf) format('truetype');
 }
