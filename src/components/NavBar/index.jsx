@@ -1,59 +1,39 @@
-import styled from "styled-components"
-import React from "react";
-import { Link } from "react-router-dom"
+import { useMediaQuery } from 'react-responsive'
 import Reel from './Reel'
 import Work from './Work'
 import Contact from './Contact'
 import Name from './Name'
+import Vimeo from "./Vimeo";
+import LinkedIn from "./LinkedIn";
+import { OuterDiv, StyledLink, NavDiv } from '../../styles/Nav'
 
 
+const NavBar = () => {
 
-export const OuterDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  @media (max-width: 1100px) {
-    flex-direction: column;
-    justify-content: center;
-  }
-`
+  const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
 
-export const NavDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-`
-
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-`
-
-
-export default function NavBar() {
   return (
     <OuterDiv>
       <StyledLink to="/reel">
         <Name />
       </StyledLink>
       <NavDiv>
-      <StyledLink to="/reel">
-        <Reel />
-      </StyledLink>
-      <StyledLink to="/work">
-        <Work />
-      </StyledLink>
-      <StyledLink to="/contact">
-        <Contact />
-      </StyledLink>
-    </NavDiv>
+        <StyledLink to="/reel">
+          <Reel />
+        </StyledLink>
+        <StyledLink to="/work">
+          <Work />
+        </StyledLink>
+        <StyledLink to="/contact">
+          <Contact />
+        </StyledLink>
+        {!isMobile && <Vimeo />}
+        {!isMobile && <LinkedIn />}
+      </NavDiv>
     </OuterDiv>
 
   )
 }
 
+export default NavBar
 
