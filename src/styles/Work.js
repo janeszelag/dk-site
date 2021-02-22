@@ -13,10 +13,10 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   justify-content: center;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   justify-content: space-evenly;
 }
 `
