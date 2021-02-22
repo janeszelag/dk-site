@@ -11,7 +11,7 @@ const Contact = () => {
 
       <HeadShot
         src={`${process.env.PUBLIC_URL}/head-shot.png`}
-        alt="logo" />
+        alt="head shot" />
       {isMobile && (
         <IconsDiv>
           <Vimeo />
