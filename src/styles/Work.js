@@ -16,7 +16,7 @@ justify-content: space-between;
 @media (max-width: 900px) {
   justify-content: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   justify-content: space-evenly;
 }
 `
