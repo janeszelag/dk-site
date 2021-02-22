@@ -8,9 +8,9 @@ const Reel = () => {
       <iframe src="https://player.vimeo.com/video/511744746"
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: isMobile? '100%' : '80%' }}
         title='dk-reel'
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
     </div>
   )

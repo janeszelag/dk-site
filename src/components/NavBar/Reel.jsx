@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Heading from '../Shared/Heading'
+import { Heading } from '../../styles/Nav'
+
 
 
 const Reel = () => {

@@ -5,7 +5,30 @@ export const Href = styled.a`
   width: 36px;
   height: 36px;
   padding-left: 1.75rem;
+  @media (max-width: 1000px) {
+    padding-left: 0;
+    padding-right: 1rem;
+    }
 `
+
+export const Heading = styled.p(({ open }) => ({
+  'font-family': "TheMoonlight",
+  'color': open ? '#ff9900' : "#ffffff",
+  'font-size': "3rem",
+  'margin': 0,
+  'padding-left': '1.75rem',
+  '&:hover': {
+    'color': '#ff9900'
+  },
+  '@media (max-width: 768px)': {
+    'font-size': '2rem',
+    'padding': '1rem',
+  },
+  '@media (max-width: 400px)': {
+    'font-size': '2rem',
+    'padding': '1rem',
+  }
+}))
 
 export const Icon = styled.svg(({
   width: '36px',
@@ -13,7 +36,11 @@ export const Icon = styled.svg(({
   fill: '#ffffff',
   '&:hover': {
     'fill': '#ff9900'
-  }
+  },
+  '@media (max-width: 768px)': {
+    width: '28px',
+    height: '28px',
+  },
 }))
 
 export const OuterDiv = styled.div`

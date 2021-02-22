@@ -10,11 +10,11 @@ import { OuterDiv, StyledLink, NavDiv } from '../../styles/Nav'
 
 const NavBar = () => {
 
-  const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 850px)' })
 
   return (
     <OuterDiv>
-      <StyledLink to="/reel">
+      <StyledLink to="/">
         <Name />
       </StyledLink>
       <NavDiv>
