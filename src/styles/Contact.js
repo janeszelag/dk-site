@@ -46,10 +46,13 @@ padding-top: 1rem;
 export const Paragraph = styled.p`
 font-family: FranklinGothic;
 color: #ffffff;
-font-size: 1.5rem;
+font-size: 1.4rem;
 margin: 0;
 @media (max-width: 800px) {
   font-size: 1.2rem;
+}
+@media (min-width: 1200px) {
+  font-size: 1.6rem;
 }
 `
 export const InfoDiv = styled.div`
