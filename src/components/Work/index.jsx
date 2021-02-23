@@ -27,18 +27,16 @@ const Row = ({ url1, url2, isMobile }) => {
 }
 
 const urls = [
-  "https://player.vimeo.com/video/515009941?byline=0&portrait=0",
-  "https://player.vimeo.com/video/514991990?byline=0&portrait=0",
   "https://player.vimeo.com/video/515002315?byline=0&portrait=0",
-  "https://player.vimeo.com/video/515351799?byline=0&portrait=0",
-  "https://player.vimeo.com/video/514991927?byline=0&portrait=0",
-  "https://player.vimeo.com/video/515002250?byline=0&portrait=0",
   "https://player.vimeo.com/video/515000012?byline=0&portrait=0",
   "https://player.vimeo.com/video/514991786?byline=0&portrait=0",
+  "https://player.vimeo.com/video/515351799?byline=0&portrait=0",
+  "https://player.vimeo.com/video/514991927?byline=0&portrait=0",
   "https://player.vimeo.com/video/514991892?byline=0&portrait=0",
-  "https://player.vimeo.com/video/515000229?byline=0&portrait=0",
-  "https://player.vimeo.com/video/515000848?byline=0&portrait=0",
   "https://player.vimeo.com/video/514991677?byline=0&portrait=0",
+  "https://player.vimeo.com/video/515009941?byline=0&portrait=0",
+  "https://player.vimeo.com/video/514991990?byline=0&portrait=0",
+  "https://player.vimeo.com/video/515000229?byline=0&portrait=0", 
 ]
 
 
@@ -54,23 +52,23 @@ const Work = () => {
         isMobile={isMobile}
       />
       <Row
-        url1={urls[7]}
+        url1={urls[2]}
         url2={urls[3]}
         isMobile={isMobile}
       />
       <Row
-        url1={urls[6]}
-        url2={urls[2]}
+        url1={urls[4]}
+        url2={urls[5]}
         isMobile={isMobile}
       />
         <Row
-        url1={urls[8]}
-        url2={urls[9]}
+        url1={urls[6]}
+        url2={urls[7]}
         isMobile={isMobile}
       />
          <Row
-        url1={urls[4]}
-        url2={urls[11]}
+        url1={urls[8]}
+        url2={urls[9]}
         isMobile={isMobile}
       />
     </OuterDiv>
