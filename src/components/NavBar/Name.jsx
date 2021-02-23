@@ -21,7 +21,7 @@ const Reel = () => {
 
   return (
     <Heading >
-      Dakota Areseneault
+      Dakota Arseneault
     </Heading>
   )
 }
