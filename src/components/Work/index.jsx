@@ -8,8 +8,8 @@ const Iframe = ({ url, isMobile, isLargeScreen }) => {
       < iframe
         title="example"
         src={url}
-        width={isMobile ? "400" : isLargeScreen ? "711" : "548"}
-        height={isMobile ? "225" : isLargeScreen ? "400" : "308"}
+        width={isMobile ? "400" : isLargeScreen ? "711" : "533"}
+        height={isMobile ? "225" : isLargeScreen ? "400" : "300"}
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen />
