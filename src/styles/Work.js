@@ -11,6 +11,7 @@ width: 100%;
 export const InnerDiv = styled.div`
 display: flex;
 flex-direction: row;
+width: 100%;
 justify-content: space-between;
 @media (max-width: 800px) {
   flex-direction: column;

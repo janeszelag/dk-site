@@ -2,14 +2,14 @@ import { useMediaQuery } from 'react-responsive'
 import { OuterDiv, InnerDiv, VideoDiv } from '../../styles/Work'
 
 
-const Iframe = ({ url, isMobile }) => {
+const Iframe = ({ url, isMobile, isLargeScreen }) => {
   return (
     <VideoDiv>
       < iframe
         title="example"
         src={url}
-        width={isMobile ? "400" : "600"}
-        height={isMobile ? "225" : "338"}
+        width={isMobile ? "400" : isLargeScreen ? "711" : "548"}
+        height={isMobile ? "225" : isLargeScreen ? "400" : "308"}
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen />
@@ -17,7 +17,7 @@ const Iframe = ({ url, isMobile }) => {
   )
 }
 
-const Row = ({ url1, url2, isMobile }) => {
+const Row = ({ url1, url2, isMobile, isLargeScreen }) => {
   return (
     <InnerDiv>
     <Iframe isMobile={isMobile} url={url1} />
@@ -44,32 +44,38 @@ const urls = [
 const Work = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
+  const isLargeScreen = useMediaQuery({ query: '(min-width: 1200px)' })
   return (
     <OuterDiv>
       <Row
         url1={urls[0]}
         url2={urls[1]}
         isMobile={isMobile}
+        isLargeScreen={isLargeScreen}
       />
       <Row
         url1={urls[2]}
         url2={urls[3]}
         isMobile={isMobile}
+        isLargeScreen={isLargeScreen}
       />
       <Row
         url1={urls[4]}
         url2={urls[5]}
         isMobile={isMobile}
+        isLargeScreen={isLargeScreen}
       />
         <Row
         url1={urls[6]}
         url2={urls[7]}
         isMobile={isMobile}
+        isLargeScreen={isLargeScreen}
       />
          <Row
         url1={urls[8]}
         url2={urls[9]}
         isMobile={isMobile}
+        isLargeScreen={isLargeScreen}
       />
     </OuterDiv>
   )
