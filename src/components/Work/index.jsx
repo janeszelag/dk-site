@@ -10,7 +10,7 @@ const Iframe = ({ url, isMobile }) => {
         src={url}
         width={isMobile ? "400" : "600"}
         height={isMobile ? "225" : "338"}
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen />
     </VideoDiv>
