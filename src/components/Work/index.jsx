@@ -20,8 +20,8 @@ const Iframe = ({ url, isMobile, isLargeScreen }) => {
 const Row = ({ url1, url2, isMobile, isLargeScreen }) => {
   return (
     <InnerDiv>
-    <Iframe isMobile={isMobile} url={url1} />
-    <Iframe isMobile={isMobile} url={url2} />
+    <Iframe isMobile={isMobile} url={url1} isLargeScreen={isLargeScreen} />
+    <Iframe isMobile={isMobile} url={url2} isLargeScreen={isLargeScreen}  />
   </InnerDiv>
   )
 }
