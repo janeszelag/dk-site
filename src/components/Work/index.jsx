@@ -44,7 +44,7 @@ const urls = [
 const Work = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
-  const isLargeScreen = useMediaQuery({ query: '(min-width: 1200px)' })
+  const isLargeScreen = useMediaQuery({ query: '(min-width: 1500px)' })
   return (
     <OuterDiv>
       <Row
