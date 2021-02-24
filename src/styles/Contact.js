@@ -56,7 +56,7 @@ export const InfoDiv = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: flex-start;
 margin-right: 1rem;
 `
 export const Info = styled.p`

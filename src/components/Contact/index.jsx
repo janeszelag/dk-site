@@ -30,8 +30,7 @@ const Contact = () => {
         I am graduate of the Sheridan Media Arts/Film & Television program.
         </Paragraph>
         <InfoDiv>
-          <Info>dkneault@gmail.com</Info>
-          <Info>(289)-242-7878</Info>
+          <Info>dkneault@gmail.com | (289)-242-7878</Info>
         </InfoDiv>
 
       </BioDiv>
